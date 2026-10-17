@@ -1,0 +1,65 @@
+default_platform(:android)
+
+platform :android do
+  FIREBASE_APP_ID = "1:1059361862785:android:6d371036ade3a768b60980"
+
+  desc "Build debug APK"
+  lane :build_debug do
+    gradle(task: "clean assembleDebug")
+  end
+
+  desc "Build release APK"
+  lane :build_release do
+    gradle(task: "clean assembleRelease")
+  end
+
+  desc "Distribute debug APK to Firebase App Distribution"
+  lane :distribute_debug do |options|
+    build_debug
+
+    groups = options[:groups] || ENV["FIREBASE_APP_DISTRO_GROUPS"] || "internal-testers"
+    testers = options[:testers] || ENV["FIREBASE_APP_DISTRO_TESTERS"]
+    release_notes = options[:release_notes] || ENV["FIREBASE_APP_DISTRO_NOTES"] || "Debug build uploaded via Fastlane"
+    credentials_file = options[:service_credentials_file] || ENV["GOOGLE_APPLICATION_CREDENTIALS"]
+    firebase_token = options[:firebase_cli_token] || ENV["FIREBASE_TOKEN"]
+
+    params = {
+      app: FIREBASE_APP_ID,
+      release_notes: release_notes,
+      android_artifact_type: "APK",
+      apk_path: "app/build/outputs/apk/debug/app-debug.apk"
+    }
+
+    params[:groups] = groups if groups && !groups.empty?
+    params[:testers] = testers if testers && !testers.empty?
+    params[:service_credentials_file] = credentials_file if credentials_file && !credentials_file.empty?
+    params[:firebase_cli_token] = firebase_token if firebase_token && !firebase_token.empty?
+
+    firebase_app_distribution(params)
+  end
+
+  desc "Distribute release APK to Firebase App Distribution"
+  lane :distribute_release do |options|
+    build_release
+
+    groups = options[:groups] || ENV["FIREBASE_APP_DISTRO_GROUPS"] || "internal-testers"
+    testers = options[:testers] || ENV["FIREBASE_APP_DISTRO_TESTERS"]
+    release_notes = options[:release_notes] || ENV["FIREBASE_APP_DISTRO_NOTES"] || "Release build uploaded via Fastlane"
+    credentials_file = options[:service_credentials_file] || ENV["GOOGLE_APPLICATION_CREDENTIALS"]
+    firebase_token = options[:firebase_cli_token] || ENV["FIREBASE_TOKEN"]
+
+    params = {
+      app: FIREBASE_APP_ID,
+      release_notes: release_notes,
+      android_artifact_type: "APK",
+      apk_path: "app/build/outputs/apk/release/app-release-unsigned.apk"
+    }
+
+    params[:groups] = groups if groups && !groups.empty?
+    params[:testers] = testers if testers && !testers.empty?
+    params[:service_credentials_file] = credentials_file if credentials_file && !credentials_file.empty?
+    params[:firebase_cli_token] = firebase_token if firebase_token && !firebase_token.empty?
+
+    firebase_app_distribution(params)
+  end
+end

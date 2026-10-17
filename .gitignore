@@ -1,0 +1,40 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Large binaries & packages
+*.apk
+*.xapk
+*.aab
+
+# Local database files and WAL logs
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so.dSYM/
+.pytest_cache/
+.venv/
+venv/
+ENV/
+
+# CodeGraph data
+.codegraph/codegraph.db
+.codegraph/*.sock
+.codegraph/*.pid
+.codegraph/*.log
+
+# Logs and temporary files
+*.log
+*.tmp

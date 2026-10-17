@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1059361862785",
+    "project_id": "balo-cloud",
+    "storage_bucket": "balo-cloud.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1059361862785:android:6d371036ade3a768b60980",
+        "android_client_info": {
+          "package_name": "com.devindie.balo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6Xrz3m3GYTzNkuYk0SnpR5V84Z2O1RKc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

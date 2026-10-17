@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="CHOOSE_PER_TEST" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/firebase" />
+            <option value="$PROJECT_DIR$/firebase/analytics" />
+            <option value="$PROJECT_DIR$/firebase/analytics/api" />
+            <option value="$PROJECT_DIR$/firebase/analytics/impl" />
+            <option value="$PROJECT_DIR$/firebase/auth" />
+            <option value="$PROJECT_DIR$/firebase/auth/api" />
+            <option value="$PROJECT_DIR$/firebase/auth/impl" />
+            <option value="$PROJECT_DIR$/firebase/crashlytics" />
+            <option value="$PROJECT_DIR$/firebase/crashlytics/api" />
+            <option value="$PROJECT_DIR$/firebase/crashlytics/impl" />
+            <option value="$PROJECT_DIR$/firebase/firestore" />
+            <option value="$PROJECT_DIR$/firebase/firestore/api" />
+            <option value="$PROJECT_DIR$/firebase/firestore/impl" />
+            <option value="$PROJECT_DIR$/firebase/functions" />
+            <option value="$PROJECT_DIR$/firebase/functions/api" />
+            <option value="$PROJECT_DIR$/firebase/functions/impl" />
+            <option value="$PROJECT_DIR$/firebase/messaging" />
+            <option value="$PROJECT_DIR$/firebase/messaging/api" />
+            <option value="$PROJECT_DIR$/firebase/messaging/impl" />
+            <option value="$PROJECT_DIR$/firebase/performance" />
+            <option value="$PROJECT_DIR$/firebase/performance/api" />
+            <option value="$PROJECT_DIR$/firebase/performance/impl" />
+            <option value="$PROJECT_DIR$/firebase/phone-verification" />
+            <option value="$PROJECT_DIR$/firebase/phone-verification/api" />
+            <option value="$PROJECT_DIR$/firebase/phone-verification/impl" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

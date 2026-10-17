@@ -1,0 +1,2 @@
+json_key_file("") # Path to the json secret file if using Google Play / Service Account
+package_name("com.devindie.balo")

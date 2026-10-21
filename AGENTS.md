@@ -23,22 +23,3 @@ CodeGraph maintains a semantic graph of symbols, call hierarchies, and reference
    - `codegraph sync`: Update the index if significant code changes have been made.
 
 Do **NOT** use `grep` or manual file browsing unless CodeGraph is unavailable or the content is unindexed (e.g. raw logs, binary files).
-
----
-
-## Project Management (Markplane)
-
-This project uses [Markplane](https://github.com/zerowand01/markplane) for AI-native, markdown-first project management.
-
-### Key Navigation Files
-- `.markplane/INDEX.md` — Central navigation entry point
-- `.markplane/.context/summary.md` — Current project state and priority queue
-- `.markplane/backlog/INDEX.md` — All work items and tasks
-- `.markplane/plans/INDEX.md` — Implementation plans linked to tasks
-- `.markplane/roadmap/INDEX.md` — Epics and milestone tracking
-
-### Working on Tasks
-1. Consult `.markplane/.context/summary.md` to see the current active work and next priority tasks.
-2. Read the relevant task item (e.g. `.markplane/backlog/items/TASK-*.md`) and its linked plan (`.markplane/plans/items/PLAN-*.md`) before starting implementation.
-3. Update task status with `markplane start <ID>` or `markplane done <ID>`.
-4. Run `markplane sync` after creating or editing items to keep index files and summaries in sync.

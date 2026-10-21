@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balo — Smart, Private Backup Companion for Zalo</title>
+  <meta name="description" content="Never lose a message or memory again. Balo is a local-first, interval-based Android backup engine for Zalo featuring Content-Addressable Storage (CAS) deduplication.">
+  <meta name="theme-color" content="#0a0f1d">
+  <link rel="canonical" href="https://balo-cloud.web.app/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://balo-cloud.web.app/">
+  <meta property="og:title" content="Balo — Smart, Private Backup Companion for Zalo">
+  <meta property="og:description" content="Automated interval backup engine with Content-Addressable Storage (CAS) deduplication. Retain every memory and message with zero storage waste.">
+  <meta property="og:image" content="https://balo-cloud.web.app/favicon.svg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://balo-cloud.web.app/">
+  <meta name="twitter:title" content="Balo — Smart, Private Backup Companion for Zalo">
+  <meta name="twitter:description" content="Automated interval backup engine with Content-Addressable Storage (CAS) deduplication.">
+
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+</head>
+<body>
+
+  <!-- ════════════════ Navigation Bar ════════════════ -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo" aria-label="Balo Home">
+        <div class="logo-badge">
+          <div class="logo-badge-inner">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #10b981;">
+              <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+              <path d="m9 10 2 2 4-4"/>
+            </svg>
+          </div>
+        </div>
+        <span class="logo-text">Balo</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#security" class="nav-link">Security & Privacy</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#download" class="btn btn-primary btn-sm" data-cta="download">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          <span>Get Balo</span>
+        </a>
+      </nav>
+
+      <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ════════════════ Hero Section ════════════════ -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="pill-badge">
+            <span class="pill-dot"></span>
+            <span>Version 1.0 Android Early Access</span>
+          </div>
+
+          <h1>
+            Your Zalo Messages.<br>
+            <span class="highlight">Safe, Private, and Truly Yours.</span>
+          </h1>
+
+          <p class="hero-description">
+            Balo is a local-first backup engine that safeguards your conversations, photos, voice notes, and documents. Powered by Content-Addressable Storage (CAS) for unmatched deduplication and instant recovery.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#download" class="btn btn-primary" data-cta="download">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              <span>Download Android APK</span>
+            </a>
+            <a href="#features" class="btn btn-secondary">
+              <span>Explore Capabilities</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m9 18 6-6-6-6"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="hero-metrics">
+            <div class="metric-item">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Local-First Privacy</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">Up to 80%</span>
+              <span class="metric-label">Storage Saved (CAS)</span>
+            </div>
+            <div class="metric-item">
+              <span class="metric-value">0 Cloud</span>
+              <span class="metric-label">Third-party Leakage</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Mockup -->
+        <div class="hero-visual">
+          <div class="mockup-card">
+            <div class="card-header-status">
+              <div class="status-badge">
+                <span class="status-indicator"></span>
+                <span>Active • Scheduled Sync</span>
+              </div>
+              <span style="font-size: 0.8rem; color: var(--text-dim);">Wi-Fi + Cellular</span>
+            </div>
+
+            <div class="sync-stat-box">
+              <div class="sync-stat-title">Content-Addressable Storage Ratio</div>
+              <div class="sync-stat-main">
+                <span class="stat-bold">78.4% Deduplicated</span>
+                <span style="font-size: 0.85rem; color: var(--emerald-400);">Saved 4.82 GB</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-fill"></div>
+              </div>
+            </div>
+
+            <div class="recent-activities">
+              <div class="activity-item">
+                <span class="activity-name">SQLite Messages & Threads</span>
+                <span class="activity-tag">Sync: 2m ago</span>
+              </div>
+              <div class="activity-item">
+                <span class="activity-name">CAS Image Repository (SHA-256)</span>
+                <span class="activity-tag">342 Deduplicated</span>
+              </div>
+              <div class="activity-item">
+                <span class="activity-name">Encrypted Keyring Integrity</span>
+                <span class="activity-tag">Verified OK</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════ Features Section ════════════════ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Engine Features</div>
+          <h2 class="section-title">Built for Performance, Speed, & Absolute Privacy</h2>
+          <p class="section-subtitle">Designed to overcome the limitations of default chat backups, giving you full control and ownership over your personal data.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Feature 1 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">CAS File Deduplication</h3>
+            <p class="feature-desc">Content-Addressable Storage (CAS) indexes files by their cryptographic hash. If a photo or video is shared 10 times across 10 group chats, it only takes up disk space once.</p>
+          </div>
+
+          <!-- Feature 2 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Silent Interval Backups</h3>
+            <p class="feature-desc">Configure automated background synchronization at regular intervals. Runs silently on Android WorkManager with Wi-Fi only or cellular triggers to preserve battery and quota.</p>
+          </div>
+
+          <!-- Feature 3 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Hardware PIN & Passphrase</h3>
+            <p class="feature-desc">Safeguard your backup archives with custom passphrases or Android hardware Keystore PIN protection. Your chats remain private even if external storage is accessed.</p>
+          </div>
+
+          <!-- Feature 4 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="17 8 12 3 7 8"/>
+                <line x1="12" y1="3" x2="12" y2="15"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">One-Click Reconstitution</h3>
+            <p class="feature-desc">Export or restore full conversation histories, voice notes, stickers, and attachments back into human-readable SQLite or file trees in seconds without data corruption.</p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Local-First Ownership</h3>
+            <p class="feature-desc">Your chat archives are stored on your local device, SD card, or your own private cloud storage. Zero telemetry on message contents, zero centralized server dependence.</p>
+          </div>
+
+          <!-- Feature 6 -->
+          <div class="feature-card">
+            <div class="feature-icon-wrapper">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 3v18h18"/>
+                <path d="m19 9-5 5-4-4-3 3"/>
+              </svg>
+            </div>
+            <h3 class="feature-title">Storage Health & Analytics</h3>
+            <p class="feature-desc">Inspect which chats occupy the most media space, clean orphaned temporary cache files, and optimize internal storage without deleting important conversation logs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════ How It Works ════════════════ -->
+    <section class="section" id="how-it-works" style="background: rgba(15, 23, 42, 0.4);">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Step-by-Step</div>
+          <h2 class="section-title">How Balo Works Seamlessly</h2>
+          <p class="section-subtitle">Set it up once in 60 seconds and let the automated sync engine take care of the rest.</p>
+        </div>
+
+        <div class="steps-container">
+          <div class="step-card">
+            <span class="step-number">01</span>
+            <div class="step-badge">1</div>
+            <h3 class="step-title">Configure Schedule & Network</h3>
+            <p class="step-desc">Pick your preferred backup frequency (daily, interval-based) and network conditions (Wi-Fi only or cellular data).</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">02</span>
+            <div class="step-badge">2</div>
+            <h3 class="step-title">Automatic CAS Deduplication</h3>
+            <p class="step-desc">The background engine parses your conversation state and calculates SHA-256 hashes, deduplicating repetitive files to minimize disk footprint.</p>
+          </div>
+
+          <div class="step-card">
+            <span class="step-number">03</span>
+            <div class="step-badge">3</div>
+            <h3 class="step-title">Instant Reconstitution</h3>
+            <p class="step-desc">Easily view, search, export, or reconstruct conversations and attachments whenever you migrate to a new device or recover lost chats.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════ Security Banner ════════════════ -->
+    <section class="section" id="security">
+      <div class="container">
+        <div class="security-banner">
+          <div>
+            <div class="section-tag">Security & Integrity</div>
+            <h2 style="font-size: 1.85rem; font-weight: 700; margin-bottom: 1rem;">Engineered for Total Sovereignty Over Your Data</h2>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+              Unlike conventional cloud messaging sync that exposes raw chats or enforces strict retention quotas, Balo places you in full control of your archive keys and storage repositories.
+            </p>
+            <div class="security-points">
+              <div class="security-point">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Local SQLite and WAL safe snapshotting without corrupting active chat sessions.</span>
+              </div>
+              <div class="security-point">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>End-to-end passphrase encryption safeguarding personal media and conversation logs.</span>
+              </div>
+              <div class="security-point">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Standard open formats: inspect your reconstituted files anytime with standard tools.</span>
+              </div>
+            </div>
+          </div>
+          <div style="background: rgba(11, 19, 43, 0.7); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 1.75rem;">
+            <div style="font-size: 0.85rem; color: var(--emerald-400); font-weight: 600; margin-bottom: 0.5rem; text-transform: uppercase;">CAS Cryptographic Guarantee</div>
+            <code style="display: block; font-family: monospace; font-size: 0.825rem; color: var(--text-muted); line-height: 1.6; word-break: break-all;">
+              cas_hash = sha256(media_content)<br>
+              chunk_size = 4096 KB<br>
+              encryption = AES-GCM-256<br>
+              storage = local_isolated_fs
+            </code>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════ FAQ Section ════════════════ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-tag">Common Questions</div>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">Everything you need to know about Balo backup and storage deduplication.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Is root access required to use Balo?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>No root access is required for standard backups and media archiving. Balo operates through standard Android storage APIs and backup services, keeping your device warranty and Knox/SafetyNet status intact.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What is Content-Addressable Storage (CAS)?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Content-Addressable Storage stores files using their unique cryptographic hash rather than filenames or chat IDs. When friends share the same viral video, photo, or document across multiple channels, Balo stores it exactly once while keeping references intact in each conversation.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Where are my backups stored?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>By default, backups are saved in your chosen local Android folder or SD card. You can also point your backup target to private cloud storage services or local network shares (NAS) without passing through proprietary third-party servers.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I restore messages if I switch to another device?</span>
+              <svg class="faq-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Balo includes a Reconstitution Tool that allows you to import your CAS repository and SQLite index onto your new device or export readable HTML/JSON archives with original media intact.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════ Call to Action ════════════════ -->
+    <section class="section" id="download">
+      <div class="container">
+        <div class="cta-box">
+          <h2>Ready to Take Control of Your Chat History?</h2>
+          <p>Get Balo for Android today. Protect your photos, voice messages, and key work discussions with seamless interval backups.</p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="#" class="btn btn-primary" data-cta="download">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" y1="15" x2="12" y2="3"/>
+              </svg>
+              <span>Download APK (Direct)</span>
+            </a>
+            <a href="https://console.firebase.google.com/u/0/project/balo-cloud/overview" target="_blank" rel="noopener" class="btn btn-secondary">
+              <span>Firebase Console</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ════════════════ Footer ════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="logo">
+          <div class="logo-badge" style="width: 28px; height: 28px;">
+            <div class="logo-badge-inner">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: #10b981;">
+                <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/>
+              </svg>
+            </div>
+          </div>
+          <span class="logo-text" style="font-size: 1.1rem;">Balo</span>
+        </div>
+
+        <div style="display: flex; gap: 1.5rem; font-size: 0.9rem;">
+          <a href="#features" class="footer-link">Features</a>
+          <a href="#how-it-works" class="footer-link">How It Works</a>
+          <a href="#security" class="footer-link">Security</a>
+          <a href="#faq" class="footer-link">FAQ</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Balo by DevIndie. Built for privacy, sovereignty, and data resilience.</p>
+        <p class="disclaimer">
+          Disclaimer: Balo is an independent utility created by DevIndie and is not affiliated, associated, authorized, endorsed by, or in any way officially connected with VNG Corporation or Zalo. All product and company names are trademarks™ or registered® trademarks of their respective holders.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
